@@ -17,6 +17,6 @@ This directory consists of two subdirectories called [**GraphAdjM**](GraphAdjM) 
 
 ### Using adjacency lists
 
-- [**GraphAdjL.h**](GraphAdjM/GraphAdjL.h) - a header file, which provides declaration of the graph class using adjacency lists, having member variables for the amount of vertices and adjacency lists themselves and methods for adding an edge, printing the graph and some getters for the member variables mentioned before.
-- [**GraphAdjL.cpp**](GraphAdjM/GraphAdjL.cpp) - a source file, which contains an implementation of the methods, provided in [**GraphAdjL.h**](GraphAdjM/GraphAdjL.h).
+- [**GraphAdjL.h**](GraphAdjL/GraphAdjL.h) - a header file, which provides declaration of the graph class using adjacency lists, having member variables for the amount of vertices and adjacency lists themselves and methods for adding an edge, printing the graph and some getters for the member variables mentioned before.
+- [**GraphAdjL.cpp**](GraphAdjL/GraphAdjL.cpp) - a source file, which contains an implementation of the methods, provided in [**GraphAdjL.h**](GraphAdjL/GraphAdjL.h).
 
