@@ -4,7 +4,7 @@
 
 ---
 
-This directory consists of two subdirectories called [**GraphAdjM**](GraphAdjM) and [**GraphAdjL**](GraphAdjL), which include implementations of the graph structure using adjacency matrix and adjacency list accordingly.
+This directory consists of two subdirectories called [**GraphAdjM**](GraphAdjM) and [**GraphAdjL**](GraphAdjL), which include implementations of the _weighted oriented graph_ structure using adjacency matrix and adjacency list accordingly.
 
 ---
 
