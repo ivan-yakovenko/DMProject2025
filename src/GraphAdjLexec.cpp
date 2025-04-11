@@ -1,4 +1,3 @@
-#include <iostream>
 #include "GraphStructures/GraphAdjL/GraphAdjL.h"
 #include <random>
 
@@ -10,7 +9,9 @@ GraphAdjL erdosRenyiAlgorithm(int n, double p) {
     std::random_device rd;
     std::mt19937 mt(rd());
     std::bernoulli_distribution bd(p);
-    std::uniform_int_distribution<int> weights(INT_MIN, INT_MAX);
+    std::uniform_int_distribution<int> weights(1, INT_MAX);
+//    std::uniform_int_distribution<int> weights(INT_MIN, INT_MAX);
+//// to see how algorithm performs with negative weights, uncomment line 13 and comment line 12
 
     for (int u = 0; u < n; u++) {
         for (int v = 0; v < n; v++) {
@@ -50,8 +51,20 @@ std::vector<long long> bellmanFordAlgorithm(GraphAdjL &graph, int source) {
     return distances;
 }
 
+void printResult(std::vector<long long>& result) {
+    if(!result.empty()) {
+        for(size_t i = 0; i < result.size(); i++) {
+            std::cout << "Shortest path from source vertice 0 to vertice " << i << ": " << result[i] << "\n";
+        }
+    }
+    else {
+        std::cerr << "Negative cycle occurred!\n";
+    }
+}
+
 
 int main() {
+
     int vertices[10] = {20, 40, 60, 80, 100, 120, 140, 160, 180, 200};
     double densities[5] = {0.6, 0.7, 0.8, 0.9, 1};
 
